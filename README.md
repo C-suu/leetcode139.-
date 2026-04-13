@@ -108,6 +108,11 @@ class Solution:
 * `wordDict = ["leet", "code"]`
 * 初始数组：`dp = [True, False, False, False, False, False, False, False, False]`
 
+* 提前补充知识点：
+在Python的 s[i:j] 切片中，截取出来的子字符串的长度，永远精确等于 j - i。
+s[0:1] 的长度是 1 - 0 = 1，所以只能切出一个字符 "l"。
+s[0:2] 的长度是 2 - 0 = 2，所以切出两个字符 "le"。
+
 ### 完整运行轨迹表格
 
 | 外层 `i` <br>(切分起点) | 内层 `j` <br>(切分终点) | 前提条件：<br>`dp[i]` 是 True 吗？ | 当前尝试截取子串 <br>`s[i:j]` | 目标条件：<br>是否在字典中？ | 最终结果及 `dp` 数组状态 |
